@@ -10,11 +10,11 @@ function ANALYZE_YEARLY_EXPENSE_TRENDS(years, categories) {
  const results = [];
  const numYears = years.length;
  const numCategories = categories[0].length; // Assuming uniform data
- for (let j = 0; j < numCategories; j++) {
+ for (let j = 0; j < numCategories; j++) {   //Categories
  let trend = 'Stable';
  let increasing = 0;
  let decreasing = 0;
- for (let i = 1; i < numYears; i++) {
+ for (let i = 1; i < numYears; i++) {       //years
  if (categories[i][j] > categories[i - 1][j]) {
  increasing++;
  } else if (categories[i][j] < categories[i - 1][j]) {
