@@ -7,5 +7,6 @@
  * @customfunction
  */
 function SUM_OVER_THRESHOLD(data, threshold) {
- return data.flat().filter(val => typeof val === 'number' && val > threshold).reduce((sum, val) => sum + val, 0);
+ return data.flat().filter(val => typeof val === 'number' && val > threshold)
+.reduce((sum, val) => sum + val, 0);
 }
